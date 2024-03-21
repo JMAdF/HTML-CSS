@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Bloco de Notas Interativo</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		.container {
+			width: 80%;
+			margin: 20px auto;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			padding: 20px;
+			border-radius: 10px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.title {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.note {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+		}
+		.note button {
+			background-color: #fff;
+			color: #e60000;
+			border: 1px solid #e60000;
+			border-radius: 5px;
+			padding: 5px 10px;
+			cursor: pointer;
+		}
+		.note button:hover {
+			background-color: #e60000;
+			color: #fff;
+		}
+		.note input[type="checkbox"] {
+			margin-right: 10px;
+		}
+		.new-note {
+			margin-top: 20px;
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+		}
+		.new-note input[type="text"] {
+			flex: 1;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+			margin-right: 10px;
+			font-size: 16px;
+		}
+		.new-note button {
+			background-color: #e60000;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		.new-note button:hover {
+			background-color: #d10000;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="title">Bloco de Notas Interativo</div>
+		<div class="notes">
+			<div class="note">
+				<input type="checkbox">
+				<p>Lembrar de comprar pão no supermercado.</p>
+				<button>Excluir</button>
+			</div>
+			<div class="note">
+				<input type="checkbox">
+				<p>Marcar consulta com o dentista.</p>
+				<button>Excluir</button>
+			</div>
+			<div class="note">
+				<input type="checkbox">
+				<p>Enviar e-mail para o cliente.</p>
+				<button>Excluir</button>
+			</div>
+		</div>
+		<div class="new-note">
+			<input type="text" placeholder="Adicionar nova nota">
+			<button>Adicionar</button>
+		</div>
+</html>
