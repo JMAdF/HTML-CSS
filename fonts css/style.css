@@ -1,0 +1,17 @@
+@font-face {
+    font-family: la beauties;
+    src: url(La\ Beauties.ttf);
+}
+
+body{
+    font-size: 100px;
+    text-align: center;
+}
+
+.heart{
+    color: red;
+}
+
+.font{
+    font-family: la beauties;
+}
